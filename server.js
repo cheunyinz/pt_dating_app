@@ -1,11 +1,19 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 8000
 
 app.get('/', (req, res) => {
-  res.send('dit is een test')
+  res.send('versie 2')
+})
+
+app.get('/about', (req,res) => {
+    res.send('over de website')
+})
+
+app.get('/create_account' , (req,res) =>{
+  res.send('account aanmaken')
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`test`)
 })
