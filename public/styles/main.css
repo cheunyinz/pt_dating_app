@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*******************/
+/*CUSTOM PROPERTIES*/
+/*******************/
+
+:root {
+    --primary-brand-color: #234DE1;
+    --accent-brand-color: #fff;
+}
+
+/*********/
+/*GENERAL*/
+/*********/
+
+h1 {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
+}
+
+nav {
+    background-color: var(--primary-brand-color);
+    color: var(--accent-brand-color);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+nav ul a {
+    color: var(--accent-brand-color);
+}
+
+main {
+    background-color: red;
+    color: white;
+}
+
+footer {
+    background-color: lightgreen;
+}
