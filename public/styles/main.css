@@ -1,9 +1,33 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizespeed;
+  line-height: 1.6;
+}
+
+ul,
+ol {
+  list-style: none;
 }
 
 /*******************/
@@ -11,39 +35,37 @@
 /*******************/
 
 :root {
-    --primary-brand-color: #234DE1;
-    --accent-brand-color: #fff;
+  --primary-brand-color: #234de1;
+  --secondary-brand-color: #e77c30;
+  --accent-brand-color: #f7f9fd;
 }
 
 /*********/
 /*GENERAL*/
 /*********/
 
-h1 {
-    font-family: 'montserrat', sans-serif;
-    font-weight: 700;
+h1,h2,h3,h4 {
+  font-family: "montserrat", sans-serif;
+  font-weight: 700;
+}
+
+p, a, legend, label, button {
+  font-family: 'source-sans-pro', sans-serif;
 }
 
 nav {
-    background-color: var(--primary-brand-color);
-    color: var(--accent-brand-color);
+  background-color: var(--primary-brand-color);
+  color: var(--accent-brand-color);
 }
 
 nav ul {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 nav ul a {
-    color: var(--accent-brand-color);
+  color: var(--accent-brand-color);
 }
 
-main {
-    background-color: red;
-    color: white;
-}
 
-footer {
-    background-color: lightgreen;
-}

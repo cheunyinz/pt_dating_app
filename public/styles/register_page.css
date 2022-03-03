@@ -1,0 +1,27 @@
+@import url(../styles/main.css);
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin: 0 auto;
+    width: min(100% - 2rem, 75rem);
+  }
+  
+  fieldset {
+    display: flex;
+    flex-direction: column;
+  
+    margin-block: 1rem;
+  
+    border: none;
+  }
+  
+  input {
+    margin-block: .2rem 1rem;
+    width: minmax(20rem, 30rem);
+  }
+  

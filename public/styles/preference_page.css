@@ -1,0 +1,7 @@
+@import url(../styles/main.css);
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
