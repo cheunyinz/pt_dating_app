@@ -1,0 +1,45 @@
+[
+    {
+        "slug": "hong-kong",
+        "who-is-going": "couple",
+        "type-of-trip": "city",
+        "budget": "reasonable"
+    },
+    {
+        "slug": "bali",
+        "who-is-going": "couple",
+        "type-of-trip": "beach",
+        "budget": "reasonable"
+    },
+    {
+        "slug": "dubai",
+        "who-is-going": "couple",
+        "type-of-trip": "city",
+        "budget": "no-budget"
+    },
+    {
+        "slug": "reykjavik",
+        "who-is-going": "group-of-friends",
+        "type-of-trip": "active",
+        "budget": "no-budget"
+    },
+    {
+        "slug": "rome",
+        "who-is-going": "group-of-friends",
+        "type-of-trip": "culture",
+        "budget": "low-budget"
+    },
+    {
+        "slug": "vienna",
+        "who-is-going": "family",
+        "type-of-trip": "culture",
+        "budget": "reasonable"
+    }
+    ,
+    {
+        "slug": "malaga",
+        "who-is-going": "myself",
+        "type-of-trip": "culture",
+        "budget": "low-budget"
+    }
+]

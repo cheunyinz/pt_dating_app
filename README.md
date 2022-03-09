@@ -36,3 +36,12 @@ Voor Fronte-end had ik ook wat bedacht betreft progressive enhancement. Mijn eer
 ### Source
 
 <a href= 'https://stylelint.io/user-guide/get-started'>Styleint</a>
+
+
+## Week 4
+In week 4 ding ik verder met mijn HTML&CSS. Daarnaast ging ik ook connecten met MonogDB. Dat ging opzicht wel goed maar ik kwam niet verder dan het connecten ervan. Ik probeerde nog iets met data te doen maar dat was lastig.
+
+Daarnaast ging ik ook kijken naar PostCSS en autoprefixer. Dit was niet gemakkelijk aangezien veel tutorials oud waren en documentatie niet bepaald duidelijk zijn. Daarnaast zag ik ook allerlei verschillede manieren om het te installeren wat voor verwarring zorgde.  Uiteindelijk ging ik mij bezighouden met Gulp. In de eerste instantie was voor goede bronnen ook niet makkelijk. Het installeren van Gulp was makkelijk maar de plug ins installeren en gebruiken was een uitdaging maar met wat documentateis video's heb ik het deels werkend gekregen.
+
+<a href= 'https://gulpjs.com/docs/en/getting-started/quick-start'>Gulp</a>
+<a href= 'https://www.youtube.com/watch?v=ubHwScDfRQA'>Coding in Public (YouTube)</a>

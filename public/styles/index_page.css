@@ -1,0 +1,39 @@
+@import url(../styles/main.css);
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+main section {
+    display: grid;
+    grid-template-rows: min-content;
+    justify-items: center;
+    width: min(100% - 2rem, 75rem);
+
+}
+
+main section h1 {
+    font-size: clamp(2rem, 5vw + 1rem, 3.5em);
+}
+
+main section p {
+    font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
+    max-width: 40rem;
+    text-align: center;
+    padding-block: 0rem 1.5rem;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+main section a {
+    display: block;
+    font-size: 1rem;
+    width: fit-content;
+    background-color: var(--primary-brand-color);
+    color: var(--accent-brand-color);
+    padding: 1rem 5rem;
+    border-radius: 2%;
+}

@@ -1,5 +1,10 @@
 const express = require('express')
-const expressHbs = require('express-handlebars')
+const slug = require('slug')
+const expressHbs = require('express-handlebars');
+const {
+  MongoClient
+} = require('mongodb');
+require('dotenv').config();
 
 const app = express()
 const port = 8000
@@ -8,16 +13,14 @@ const port = 8000
 
 //Static Files
 app.use(express.static('public'))
-// app.use ('/styles', express.static(__dirname + 'public/styles'))
-// app.use ('/scripts', express.static(__dirname + 'public/scripts'))
-// app.use ('/images', express.static(__dirname + 'public/images'))
+
 
 //Set Templating Engine
 app.set('view engine', 'hbs')
 app.engine('hbs', expressHbs.engine({
   extname: 'hbs',
   defaultLayout: 'default_layout.hbs',
-  layoutsDir: __dirname + '/views/layouts',
+  layoutsDir: __dirname + '/views/layouts/',
   partialsDir: __dirname + '/views/partials/',
 }))
 
@@ -26,7 +29,8 @@ app.engine('hbs', expressHbs.engine({
 app.get('/', (req, res) => {
   const pageName = "index"
   res.render('index', {
-    pageName
+    pageName,
+    layout: 'landingPage_layout.hbs'
   })
 })
 
@@ -61,7 +65,11 @@ app.get('/recommendations', (req, res) => {
 })
 
 
-
+//connect to mongoDB
+const mdbURI = process.env.mdbURI
+MongoClient.connect(mdbURI)
+  .then((result) => console.log('connected to db'))
+  .catch((err) => console.log(err));
 
 
 app.listen(port, () => {
