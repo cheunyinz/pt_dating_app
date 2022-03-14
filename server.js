@@ -73,12 +73,10 @@ app.post('/preference', async (req, res) => {
   // await db.collection('user_country').insertOne(userCountry)
 
 
-
   res.render('preference', {
     pageName,
     stepNumber,
-    stepTitle,
-    regionName
+    stepTitle
   })
 });
 
