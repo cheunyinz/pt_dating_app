@@ -30,10 +30,19 @@ main section p {
 
 main section a {
     display: block;
-    font-size: 1rem;
     width: fit-content;
     background-color: var(--primary-brand-color);
     color: var(--accent-brand-color);
-    padding: 1rem 5rem;
     border-radius: 2%;
+}
+
+main section a:first-of-type {
+    margin-bottom: 1rem;
+    padding: 1rem 5rem;
+    font-size: clamp(1rem, .5vw + 1rem, 1.25rem);
+}
+
+main section a:last-of-type {
+    padding: 1rem 5rem;
+    
 }

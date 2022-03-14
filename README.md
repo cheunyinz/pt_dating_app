@@ -43,5 +43,12 @@ In week 4 ding ik verder met mijn HTML&CSS. Daarnaast ging ik ook connecten met 
 
 Daarnaast ging ik ook kijken naar PostCSS en autoprefixer. Dit was niet gemakkelijk aangezien veel tutorials oud waren en documentatie niet bepaald duidelijk zijn. Daarnaast zag ik ook allerlei verschillede manieren om het te installeren wat voor verwarring zorgde.  Uiteindelijk ging ik mij bezighouden met Gulp. In de eerste instantie was voor goede bronnen ook niet makkelijk. Het installeren van Gulp was makkelijk maar de plug ins installeren en gebruiken was een uitdaging maar met wat documentateis video's heb ik het deels werkend gekregen.
 
+Na een vraag uurtje begreep ik de basis van gulpfile en hoe het werkt. Daarna ging ik andere plugins downloaden zoals autoprefixer en dat ging goed.
+
 <a href= 'https://gulpjs.com/docs/en/getting-started/quick-start'>Gulp</a>
 <a href= 'https://www.youtube.com/watch?v=ubHwScDfRQA'>Coding in Public (YouTube)</a>
+
+## Week 5
+Deze week was ik druk bezig met de backend. Ik had nog steeds moeite met het begrijpen hoe alles werkt en ook met API maar daarvoor ging ik o.a. veel op het internet zoeken en vragen stellen aan docenten en student assitent. 
+
+Het moeilijk aan op het internet zoeken is dat ik eigenlijk niet wist waar ik naar moest zoeken en alle uitleg was over anders voor het zelfde oplossing, dit maakte het verwarrend. 

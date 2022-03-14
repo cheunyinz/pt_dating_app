@@ -44,6 +44,14 @@ ol {
 /*GENERAL*/
 /*********/
 
+main {
+ margin: 0 auto;
+}
+
+main > section {
+  width: min(100% - 2rem, 88rem);
+}
+
 h1,h2,h3,h4 {
   font-family: "montserrat", sans-serif;
   font-weight: 700;

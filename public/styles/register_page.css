@@ -1,42 +1,67 @@
 @import url(../styles/main.css);
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 form {
-    margin: 0 auto;
-    width: min(100% - 2rem, 75rem);
-  }
-  
-  fieldset {
-    display: flex;
-    flex-direction: column;
-  
-    margin-block: 1rem;
-  
-    border: none;
-  }
-  
-  input {
-    margin-block: .2rem 1rem;
-    min-width: 18rem;
-    width: 50%;
-  }
+  margin: 0 auto;
+  width: min(100% - 2rem, 75rem);
 
-  button {
-    background-color: var(--primary-brand-color);
-    color: var(--accent-brand-color);
-    padding: 1rem 5rem;
-    box-shadow: 0px 0px 0px transparent;
-    border: 0px solid transparent;
-    text-shadow: 0px 0px 0px transparent;
-  }
-  
-  button:last-of-type {
-    background-color: transparent;
-    color: var(--primary-brand-color);
-    box-shadow: 0px 0px 0px 2px var(--primary-brand-color);
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+
+  margin-block: 1rem;
+  grid-column: 1 / -1;
+
+  border: none;
+}
+
+input {
+  margin-block: .2rem 1rem;
+  min-width: 18rem;
+  width: 50%;
+}
+
+select {
+  background-color: transparent;
+  outline: none;
+  min-width: 18rem;
+  width: 50%;
+  border: #848492 1px solid;
+  padding: .25rem;
+  border-radius: 2px;
+
+}
+
+button {
+  padding: 1rem 5rem;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+  width: fit-content;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:first-of-type {
+  background-color: transparent;
+  color: var(--primary-brand-color);
+  border: 2px solid var(--primary-brand-color);
+}
+
+button:last-of-type {
+  background-color: var(--primary-brand-color);
+  color: var(--accent-brand-color);
+  box-shadow: 0px 0px 0px 2px var(--primary-brand-color);
+  border: 0px solid transparent;
+}

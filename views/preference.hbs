@@ -1,48 +1,100 @@
 <form action="/recommendations" method="get">
   <fieldset>
+    <legend>
+      Where do you wanna go?
+    </legend>
+  
+  {{!-- <label>
+    <input type="radio" name="trip_location" id="own-country" value="{{countryName">
+    <p>Own country</p>
+  </label> 
+  --}}
+
+     <label>
+      <input type="radio" name="trip_location" id="same-continent" value="{{regionName}}">
+      <p>Same continent</p>
+    </label>
+    <lable>
+      <input type="radio" name="trip_location" id="global" value="global">
+      <p>Global</p>
+    </lable>
+  </fieldset>
+  
+  <fieldset>
     <legend>Who is going?</legend>
-    <label for="group-of-friends">A group of friends</label>
-    <input type="radio" name="who-is-going" id="group-of-friends" value="group-of-friends"/>
+    <label>
+      <input type="radio" name="who_is_going" id="group_of_friends" value="group_of_friends" />
+      <img src="images/who_is_going_icons/group_of_friends.jpeg" alt="pic">
+      <p>Group of friends</p>
+    </label>
 
-    <label for="couple">Couple</label>
-    <input type="radio" name="who-is-going" id="couple" value="couple" />
+    <label>
+    <input type="radio" name="who_is_going" id="couple" value="couple" />
+    <img src="images/who_is_going_icons/couple_traveling.jpg" alt="couple traveling">
+    <p>Couple</p>
+    </label>
 
-    <label for="myself">Myself</label>
-    <input type="radio" name="who-is-going" id="myself" value="myself"/>
+    <label>
+    <input type="radio" name="who_is_going" id="myself" value="myself" />
+    <img src="images/who_is_going_icons/solo_traveler.jpeg" alt="solo traveler">
+    <p>Myself</p>
+    </label>
 
-    <label for="family">Family</label>
-    <input type="radio" name="who-is-going" id="family" value="family">
+    <label>
+    <input type="radio" name="who_is_going" id="family" value="family">
+    <img src="images/who_is_going_icons/family_traveling.jpg" alt="family traveling">
+    <p>Family</p>
+    </label>
   </fieldset>
 
   <fieldset>
     <legend>Type of trip</legend>
-    <label for="city">City</label>
-    <input type="checkbox" name="type-of-trip" id="city" value="city"/>
+    <label>
+    <input type="radio" name="type_of_trip" id="city" value="city" />
+    <img src="images/type_of_trip_icons/city_trip.jpg" alt="city trip">
+    <p>City</p>
+    </label>
 
-    <label for="beach">Beach</label>
-    <input type="checkbox" name="type-of-trip" id="beach" value="beach" />
+    <label>
+    <input type="radio" name="type_of_trip" id="beach" value="beach" />
+    <img src="images/type_of_trip_icons/beach_trip.jpg" alt="beach trip">
+    <p>Beach</p>
+    </label>
 
-    <label for="active">Active</label>
-    <input type="checkbox" name="type-of-trip" id="active" value="active"/>
+    <label>
+    <input type="radio" name="type_of_trip" id="nature" value="nature" />
+    <img src="images/type_of_trip_icons/nature_trip.jpeg" alt="nature trip">
+    <p>Active</p>
+    </label>
 
-    <label for="culture">Culture</label>
-    <input type="checkbox" name="type-of-trip" id="culture" value="culture">
+    <label>
+    <input type="radio" name="type_of_trip" id="culture" value="culture">
+    <img src="images/type_of_trip_icons/culture_trip.jpg" alt="culture trip">
+    <p>Culture</p>
+    </label>
   </fieldset>
 
-   <fieldset>
+  <fieldset>
     <legend>Budget</legend>
-    <label for="low-budget">Low budget</label>
-    <input type="radio" name="budget" id="low-budget" value="low-budget"/>
+    <label>
+    <input type="radio" name="budget" id="low_budget" value="low_budget" />
+    <p>Low_budget</p>
+    </label>
 
-    <label for="reasonable">Reasonable</label>
+    <label>
     <input type="radio" name="budget" id="reasonable" value="reasonable" />
+    <p>Reasonable</p>
+    </label>
 
-    <label for="no-budget">No budget</label>
-    <input type="radio" name="budget" id="no-budget" value="no-budget"/>
+    <label>
+    <input type="radio" name="budget" id="no_budget" value="no_budget" />
+     <p>No budget</p>
+    </label>
   </fieldset>
 
 
 
-  <button type="submit"> Check out our recommendations</button>
+  
   <button id="back_Btn">Go Back</button>
+  <button type="submit"> Check out our recommendations</button>
 </form>

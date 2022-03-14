@@ -1,0 +1,29 @@
+@import url(../styles/main.css);
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+section ul {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+
+section li {
+    width: fit-content;
+}
+
+section li img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+section li p {
+    text-align: center;
+}

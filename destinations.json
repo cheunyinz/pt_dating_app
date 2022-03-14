@@ -1,45 +1,70 @@
 [
     {
-        "slug": "hong-kong",
-        "who-is-going": "couple",
-        "type-of-trip": "city",
-        "budget": "reasonable"
+        "slug": "hong_kong",
+        "city_name": "Hong Kong",
+        "who_is_going": "couple",
+        "type_of_trip": "city",
+        "budget": "reasonable",
+        "name": "China",
+        "region": "Asia"
+    },
+    {
+        "slug": "new_york",
+        "city_name": "New York",
+        "who_is_going": "couple",
+        "type_of_trip": "city",
+        "budget": "reasonable",
+        "name": "United States of America",
+        "region": "Americas"
     },
     {
         "slug": "bali",
-        "who-is-going": "couple",
-        "type-of-trip": "beach",
+        "city_name": "Bali",
+        "who_is_going": "couple",
+        "type_of_trip": "beach",
         "budget": "reasonable"
     },
     {
         "slug": "dubai",
-        "who-is-going": "couple",
-        "type-of-trip": "city",
-        "budget": "no-budget"
+        "city_name": "Dubai",
+        "who_is_going": "couple",
+        "type_of_trip": "city",
+        "budget": "no_budget"
     },
     {
         "slug": "reykjavik",
-        "who-is-going": "group-of-friends",
-        "type-of-trip": "active",
-        "budget": "no-budget"
+        "city_name": "Reykjavik",
+        "who_is_going": "group_of_friends",
+        "type_of_trip": "active",
+        "budget": "no_budget"
     },
     {
         "slug": "rome",
-        "who-is-going": "group-of-friends",
-        "type-of-trip": "culture",
-        "budget": "low-budget"
+        "city_name": "Rome",
+        "who_is_going": "group_of_friends",
+        "type_of_trip": "culture",
+        "budget": "low_budget"
     },
     {
         "slug": "vienna",
-        "who-is-going": "family",
-        "type-of-trip": "culture",
+        "city_name": "Vienna",
+        "who_is_going": "family",
+        "type_of_trip": "culture",
         "budget": "reasonable"
     }
     ,
     {
         "slug": "malaga",
-        "who-is-going": "myself",
-        "type-of-trip": "culture",
-        "budget": "low-budget"
+        "city_name": "Malaga",
+        "who_is_going": "myself",
+        "type_of_trip": "culture",
+        "budget": "low_budget"
+    },
+    {
+        "slug": "paris",
+        "city_name": "Paris",
+        "who_is_going": "couple",
+        "type_of_trip": "culture",
+        "budget": "no_budget"
     }
 ]

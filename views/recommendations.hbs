@@ -1,1 +1,13 @@
-recommendations
+<section>
+  <ul>
+    {{#each destinations}}
+      <li>
+        <img
+          src="images/recommendations_countries/{{slug}}.jpg"
+          alt="city-hong-kong"
+        />
+        <p>{{slug}}</p>
+      </li>
+    {{/each}}
+  </ul>
+</section>

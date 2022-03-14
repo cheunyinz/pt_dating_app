@@ -2,28 +2,25 @@
   <fieldset>
     <legend>Personal information</legend>
     <label for="full-name">Full name</label>
-    <input type="text" name="full-name" id="full-name" required  />
+    <input type="text" name="full-name" id="full-name" required />
     <label for="email">Email</label>
     <input type="email" name="email" id="email" required />
     <label for="phone-number">Phone number</label>
     <input type="tel" name="phone-number" id="phone-number" required />
     <label for="nationality">Nationality</label>
-    <input type="search" name="nationality" id="nationality" required />
+    <select name="country" id="userCountry">
+      {{!-- <option value="js">javascript</option>
+      <option value="css">css</option>
+      <option value="html">html</option> --}}
+    </select>
   </fieldset>
+  <button id="back_Btn">Go Back</button>
+  <button id="submitPIBtn" type="submit">
+    Step 2. Choose your preferences</button>
 
-  <fieldset>
-    <legend>Account information</legend>
-    <label for="user-name">Username</label>
-    <input type="text" name="user-name" id="user-name" required />
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password" required />
-    <label for="repeat-password">Repeat your password</label>
-    <input type="password" name="repeat-password" id="repeat-password" required />
-  </fieldset>
-
-  <button type="submit"> Step 2. Choose your preferences</button>
-   <button id="back_Btn">Go Back</button>
-   
 </form>
 
+
 <button id="getLocation">GET LOCATION</button>
+
+<h2></h2>
