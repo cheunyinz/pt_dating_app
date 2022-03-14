@@ -6,7 +6,9 @@
         "type_of_trip": "city",
         "budget": "reasonable",
         "name": "China",
-        "region": "Asia"
+        "region": "Asia",
+        "city_image": "hong-kong"
+        
     },
     {
         "slug": "new_york",
@@ -15,42 +17,59 @@
         "type_of_trip": "city",
         "budget": "reasonable",
         "name": "United States of America",
-        "region": "Americas"
+        "region": "Americas",
+        "city_image": "new-york"
+        
     },
     {
         "slug": "bali",
         "city_name": "Bali",
         "who_is_going": "couple",
         "type_of_trip": "beach",
-        "budget": "reasonable"
+        "budget": "reasonable",
+        "name": "Indonesia",
+        "region": "Asia",
+        "city_image": "bali"
     },
     {
         "slug": "dubai",
         "city_name": "Dubai",
         "who_is_going": "couple",
         "type_of_trip": "city",
-        "budget": "no_budget"
+        "budget": "no_budget",
+        "name": "United Arab Emirates",
+        "region": "Asia",
+        "city_image": "dubai"
     },
     {
         "slug": "reykjavik",
         "city_name": "Reykjavik",
         "who_is_going": "group_of_friends",
         "type_of_trip": "active",
-        "budget": "no_budget"
+        "budget": "no_budget",
+        "name": "Iceland",
+        "region": "Europe",
+        "city_image": "reykjavik"
     },
     {
         "slug": "rome",
         "city_name": "Rome",
         "who_is_going": "group_of_friends",
         "type_of_trip": "culture",
-        "budget": "low_budget"
+        "budget": "low_budget",
+        "name": "Italy",
+        "region": "Europe",
+        "city_image": "rome"
     },
     {
         "slug": "vienna",
         "city_name": "Vienna",
         "who_is_going": "family",
         "type_of_trip": "culture",
-        "budget": "reasonable"
+        "budget": "reasonable",
+        "name": "Austria",
+        "region": "Europe",
+        "city_image": "vienna"
     }
     ,
     {
@@ -58,13 +77,19 @@
         "city_name": "Malaga",
         "who_is_going": "myself",
         "type_of_trip": "culture",
-        "budget": "low_budget"
+        "budget": "low_budget",
+        "name": "Spain",
+        "region": "Europe",
+        "city_image": "malaga"
     },
     {
         "slug": "paris",
         "city_name": "Paris",
         "who_is_going": "couple",
         "type_of_trip": "culture",
-        "budget": "no_budget"
+        "budget": "no_budget",
+        "name": "France",
+        "region": "Europe",
+        "city_image": "paris"
     }
 ]

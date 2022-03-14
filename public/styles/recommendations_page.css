@@ -27,3 +27,6 @@ section li img {
 section li p {
     text-align: center;
 }
+ section * {
+     margin-block: 1rem;
+ }

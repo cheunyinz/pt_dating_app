@@ -72,8 +72,6 @@ const h2 = document.querySelector('h2');
 var userCountryValue = selectCountry.options[selectCountry.selectedIndex].text;
 
 function postSelectedCountry(){
-
-console.log(userCountryValue)
 h2.innerText = selectCountry.options[selectCountry.selectedIndex].text;
 }
 

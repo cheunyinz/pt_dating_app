@@ -38,6 +38,8 @@ ol {
   --primary-brand-color: #234de1;
   --secondary-brand-color: #e77c30;
   --accent-brand-color: #f7f9fd;
+
+  --main-width: min(100% - 2rem, 75rem);
 }
 
 /*********/
@@ -49,7 +51,7 @@ main {
 }
 
 main > section {
-  width: min(100% - 2rem, 88rem);
+  width: var(--main-width);
 }
 
 h1,h2,h3,h4 {
@@ -61,20 +63,31 @@ p, a, legend, label, button {
   font-family: 'source-sans-pro', sans-serif;
   text-decoration: none;
 }
+/***********/
+/* NAV BAR */
+/***********/
 
 nav {
   background-color: var(--primary-brand-color);
   color: var(--accent-brand-color);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 nav ul {
   display: flex;
+  width: var(--main-width);
+  padding-block: .25rem;
+  margin: 0 auto;
   flex-direction: row;
   gap: 1rem;
 }
 
 nav ul a {
   color: var(--accent-brand-color);
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
 

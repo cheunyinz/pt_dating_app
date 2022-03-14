@@ -5,17 +5,19 @@ const expressHbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const multer = require('multer')
 
-
 const {
   MongoClient
 } = require('mongodb');
 
-const{ObjectId} = require('mongodb');
+const {
+  ObjectId
+} = require('mongodb');
 const req = require('express/lib/request');
-const { response } = require('express');
-
-require('dotenv').config();
+const {
+  response
+} = require('express');
 let db = null;
+require('dotenv').config();
 
 
 const app = express()
@@ -27,7 +29,9 @@ const port = process.env.PORT || 8000
 app.use(express.static('public'))
 app.use(express.json());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.urlencoded({
+  extended: true
+}))
 
 
 //Set Templating Engine
@@ -87,7 +91,7 @@ app.get('/recommendations', async (req, res) => {
   const stepName = "Our recommendations";
   const stepTitle = "Here are your recommendations";
   const destinations = await db.collection('destinations').find(req.query).toArray();
-  
+
   res.render('recommendations', {
     stepName,
     stepTitle,
@@ -97,29 +101,46 @@ app.get('/recommendations', async (req, res) => {
 })
 
 
-app.get('/add', (req,res) =>{
+app.get('/add', (req, res) => {
   const pageName = "add"
   const pageTitle = "Add a recommendation ";
-  res.render('addrecommendation',{
+  res.render('addrecommendation', {
     pageTitle,
     pageName,
     layout: 'add_layout.hbs',
-    
+
   })
 })
 
-//add a recommendation
+//add a recommendation + multer
 
-app.post('/', async (req, res) => {
+const Storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, 'public/images/recommendations_countries');
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.fieldname + '-' + Date.now() + file.originalname);
+  },
+});
+
+const upload = multer({
+  storage: Storage
+})
+
+app.post('/', upload.single('city_image'), async (req, res) => {
+  console.log(req.file);
+
   let destination = {
     slug: slug(req.body.city_name),
     city_name: req.body.city_name,
     who_is_going: req.body.who_is_going,
     type_of_trip: req.body.type_of_trip,
-    budget: req.body.budget
+    budget: req.body.budget,
+    city_image: req.file.filename
   };
+
   await db.collection('destinations').insertOne(destination);
-  
+
   const pageName = "index"
   res.render('index', {
     pageName,
@@ -132,14 +153,14 @@ app.post('/', async (req, res) => {
 //connect to MongoDB
 async function connectDB() {
   const mdbURI = process.env.mdbURI;
-  const client = new MongoClient(mdbURI,{
+  const client = new MongoClient(mdbURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   });
-  try{
+  try {
     await client.connect();
     db = await client.db(process.env.mdbName);
-  } catch (error){
+  } catch (error) {
     console.log(error)
   }
 }
@@ -150,7 +171,7 @@ async function connectDB() {
 app.listen(port, () => {
   console.log(`Live on http://localhost:${port}`)
   connectDB()
-  .then(() => {
-    console.log("Connected to MongoDB!")
-  });
+    .then(() => {
+      console.log("Connected to MongoDB!")
+    });
 });
