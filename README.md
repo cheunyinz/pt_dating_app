@@ -1,54 +1,35 @@
-# pt_matching_app
+<h1 align="center">Trivatch Matching App</h1>
 
-## Week 1
-Deze week heb ik helaas niet de lessen kunnen volgen. Ik heb wel via Github en door te vragen aan een klasgenoot begrepen wat de bedoeling is. Voor back-end heb ik die terminal tutorial gedaan en het is mij gelukt om de packages te installeren.
+<h3 align="center">Welcome to the Trivatch Repositories </h3>
 
-Daarnaast ben ik ook begonnen met de concept bedenken.
-
-## Week 2
-Deze week kon ik bij de lessen zijn. Ik had nog wel moeite met een  concept bedenken maar de opdrachten voor FED2 en BE gingen best goed. Ik had ook EJS uitgeprobeerd met behulp van YouTube tutorials zoals :
-
-### Sources
-
-* Bullet list
-              * <a href ='https://www.youtube.com/watch?v=cYHPNurmXGU'>RED FRIENDS</a>
-             * <a href ='https://www.youtube.com/watch?v=FhZj6aysmII'> Degan Kettles</a>
+<div align="center">The Trivatch Matching app is an app which where you can get recommendations for trips based on your preference. This app is developed for a school project where we learned to work with Node.JS and MongoDB. This is the first time for me working with these technologies so it could be buggy.
 
 
-## Voorjaarvakantie (Week 2/3)
-Tijdens de voorjaarsvakantie was ik meer gefocust op mijn portfolio dan project tech. Een reden is o.a. dat ik moeite heb met een feature bedenken aangezien ik niet goed kon inbeelden wat er verwacht wordt. Ik heb wel een template engine uitgeprobeerd en dat ging opzicht wel goed met behulp van YouTube tutorials. Eerst ging ik even kijken wat er was en ik begon met EJS. Reden hiervoor is dat er werd aangegeven dat het de meeste beginners vriendelijke engine was. Nadat ik het had geinstaleerd en begreep hoe het werkte keek ik verder naar andere template engines. Ik zag toen o.a. dat de syntax van Handlebars beter en duidelijker uitzagen dan die van EJS. Aangezien het ook wat uitdagender is volgens de docenten heb ik uiteindelijk Handlebars proberen te installeren en dat ging ook goed. Daarnaast was de documentatie van Handlebars goed en op YT waren er ook genoeg tutorials.
+### Get started
 
-### Sources
-
-<a href ='https://www.youtube.com/channel/UCvXscyQ0cLzPZeNOeXI45Sw'>Raddy</a>
-<a href= 'https://www.youtube.com/watch?v=tb7081fzfdE'>Esterling Accime</a>
-
-## Week 3 
-
-Ik heb na de eerste les verschillende lints bekeken. Ik ging eerst stylelint uitgeproberen voor mijn CSS sinds ik de features daarvan handig vind klinken.
-
-Daarnaast had ik ook definitief mijn features bedacht en mijn wireframes gemaakt. Qua features ben ik van plan dat de gebruiker een account kan aanmaken, daarna kan de gebruiker voorkeuren aangegeven voor zijn of haar vakantie en als laatst krijg de gebruiker een lijst van aanbevolen bestemmingen op basis van de aangegeven voorkeuren. Mocht ik tijd hebben ben ik ook van plan om een favoriete feature te maken.
-
-### Progressive enhancement
-Voor Fronte-end had ik ook wat bedacht betreft progressive enhancement. Mijn eerste idee was dat je tijdens het kiezen van je voorkeuren te zien krijgt hoeveel aanbevelingen er zijn voordat je klik op zoeken. Voor dit progressive enhancement kreeg ik feedback dat het eigenlijk geen progressive enhancement is. Daarom heb ik nu besloten om als progressive enhancement te doen dat als je je nationaliteit opzoekt dat het autocomplete. Een extra progressive enhancement daarboven op is dat er automatisch al een default nationaliteit wordt aangegeven op basis van je locatie. Dus als je in China ben wordt er Chinese aangegeven.
-
-
-### Source
-
-<a href= 'https://stylelint.io/user-guide/get-started'>Styleint</a>
+1. Clone the repo
+   ```sh
+   git clone https://github.com/cheunyinz/pt_matching_app.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Start the server
+   ```sh
+   node server.js
+   ```
+4. Open the website in your browser
+   [http://localhost:8000](http://localhost:8000)
 
 
-## Week 4
-In week 4 ding ik verder met mijn HTML&CSS. Daarnaast ging ik ook connecten met MonogDB. Dat ging opzicht wel goed maar ik kwam niet verder dan het connecten ervan. Ik probeerde nog iets met data te doen maar dat was lastig.
+### This project is build with
+* [Handlebars](https://handlebarsjs.com/)
+* [Node.js](https://nodejs.org/en/)
+* [MongoDB](https://www.mongodb.com/)
+* [Gulp](https://gulpjs.com/)
 
-Daarnaast ging ik ook kijken naar PostCSS en autoprefixer. Dit was niet gemakkelijk aangezien veel tutorials oud waren en documentatie niet bepaald duidelijk zijn. Daarnaast zag ik ook allerlei verschillede manieren om het te installeren wat voor verwarring zorgde.  Uiteindelijk ging ik mij bezighouden met Gulp. In de eerste instantie was voor goede bronnen ook niet makkelijk. Het installeren van Gulp was makkelijk maar de plug ins installeren en gebruiken was een uitdaging maar met wat documentateis video's heb ik het deels werkend gekregen.
+#### Readme inspiration
+Readme inspiration from: [abhisheknaiidu](https://github.com/abhisheknaiidu/awesome-github-profile-readme)
 
-Na een vraag uurtje begreep ik de basis van gulpfile en hoe het werkt. Daarna ging ik andere plugins downloaden zoals autoprefixer en dat ging goed.
-
-<a href= 'https://gulpjs.com/docs/en/getting-started/quick-start'>Gulp</a>
-<a href= 'https://www.youtube.com/watch?v=ubHwScDfRQA'>Coding in Public (YouTube)</a>
-
-## Week 5
-Deze week was ik druk bezig met de backend. Ik had nog steeds moeite met het begrijpen hoe alles werkt en ook met API maar daarvoor ging ik o.a. veel op het internet zoeken en vragen stellen aan docenten en student assitent. 
-
-Het moeilijk aan op het internet zoeken is dat ik eigenlijk niet wist waar ik naar moest zoeken en alle uitleg was over anders voor het zelfde oplossing, dit maakte het verwarrend. 
+</div>
