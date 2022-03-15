@@ -4,6 +4,8 @@
 
 <div align="center">The Trivatch Matching app is an app which where you can get recommendations for trips based on your preference. This app is developed for a school project where we learned to work with Node.JS and MongoDB. This is the first time for me working with these technologies so it could be buggy.
 
+[Trivatch App](https://trivatch.herokuapp.com/)
+
 
 ### Get started
 
@@ -20,7 +22,9 @@
    node server.js
    ```
 4. Open the website in your browser
-   [http://localhost:8000](http://localhost:8000)
+   ```sh
+   [http://localhost:8000/](http://localhost:8000/)
+   ```
 
 
 ### This project is build with
@@ -31,5 +35,4 @@
 
 #### Readme inspiration
 Readme inspiration from: [abhisheknaiidu](https://github.com/abhisheknaiidu/awesome-github-profile-readme)
-
 </div>
