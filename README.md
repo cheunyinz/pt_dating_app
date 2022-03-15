@@ -21,9 +21,9 @@
    ```sh
    node server.js
    ```
-4. Open the website in your browser
+4. Open this link in your browser
    ```sh
-   [http://localhost:8000/](http://localhost:8000/)
+   http://localhost:8000/
    ```
 
 
