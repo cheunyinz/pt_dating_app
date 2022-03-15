@@ -8,6 +8,38 @@ main {
     height: 100vh;
 }
 
+main > div {
+    position: absolute;
+    background-color: var(--secondary-brand-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    border-radius: 2%;
+}
+
+main div p {
+    color: var(--accent-brand-color);
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+main div button {
+    background-color: var(--primary-brand-color);
+    outline: none;
+    border: none;
+    padding: .5rem 2rem;
+    color: var(--accent-brand-color);
+    cursor: pointer;
+}
+
+.hidePopup {
+    display: none;
+}
+
 main section {
     display: grid;
     grid-template-rows: min-content;

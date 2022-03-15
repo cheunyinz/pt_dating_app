@@ -143,9 +143,11 @@ app.post('/', upload.single('city_image'), async (req, res) => {
 
   await db.collection('destinations').insertOne(destination);
 
+  const confirmMessage = "You succesfully added a new recommendation"
   const pageName = "index"
   res.render('index', {
     pageName,
+    confirmMessage,
     layout: 'landingPage_layout.hbs'
   })
 })

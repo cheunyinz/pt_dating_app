@@ -1,3 +1,5 @@
+//back button
+
 const backBtn = document.querySelector('#back_Btn')
 
 function goBack() {
@@ -6,6 +8,19 @@ function goBack() {
 }
 
 backBtn.addEventListener('click', goBack)
+
+
+//close popup
+
+const closeBtn = document.querySelector('#close_Btn');
+const addedPopup = document.querySelector ('#added_Popup');
+
+function closingPopup() {
+    addedPopup.classList.add('hidePopup')
+    console.log("het werkt")
+}
+
+closeBtn.addEventListener('click', closingPopup)
 
 //
 
