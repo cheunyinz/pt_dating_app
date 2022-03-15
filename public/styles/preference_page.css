@@ -8,11 +8,17 @@ header {
 
 form {
     margin: 0 auto;
-    width: min(100% - 2rem, 88rem);
+    width: var(--main-width);
+}
+
+legend {
+    font-weight: 700;
+    margin-bottom: .5rem;
 }
 
 fieldset {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
     margin-block: 1rem;
 
@@ -25,24 +31,72 @@ fieldset label {
     width: fit-content;
 }
 
-fieldset label p {
+fieldset figure{
+    padding: 1rem;
+    border-radius: 2%;
+    border: 2px solid var(--none-active-border-color);
+}
+
+fieldset figure div {
+    max-height: 10rem;
+    overflow: hidden;
+}
+
+
+fieldset figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+fieldset label figcaption {
     text-align: center;
+    margin-top: .5rem;
 }
 
 fieldset label input{
     position: absolute;
-    opacity: 1;
+    opacity: 0;
 }
 
-fieldset [type=radio]+img {
+fieldset [type=radio]+figure {
     cursor: pointer;
-    max-width:10rem;
-    max-height: 10rem;
-    width: 100%;
-    height: 100%;
-    border-radius: 100%;
+    overflow: hidden;
+
 }
 
-fieldset [type=radio]:checked+img {
-    outline: .25rem solid var(--secondary-brand-color);
+fieldset [type=radio]:checked+figure {
+    border: 2px solid var(--secondary-brand-color);
 }
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    border: 0px solid transparent;
+    margin-top: 1rem;
+    text-shadow: 0px 0px 0px transparent;
+    width: fit-content;
+  }
+  
+ form button:hover {
+    cursor: pointer;
+  }
+  
+  form button:first-of-type {
+    background-color: var(--primary-brand-color);
+    color: var(--accent-brand-color);
+    border: 0px solid transparent;
+    padding: 1em 5em;
+  }
+  
+ form button:last-of-type {
+    background-color: transparent;
+    color: var(--primary-brand-color);
+    border: 2px solid var(--primary-brand-color);
+    grid-column: 1 / 2;
+    padding: .5em 2.5em;
+    margin-bottom: 5rem;
+  }

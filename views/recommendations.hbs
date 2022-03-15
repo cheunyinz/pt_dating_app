@@ -1,12 +1,13 @@
+<div><button id="back_Btn">Change your preference</button></div>
 <section>
   <ul>
     {{#each destinations}}
       <li>
         <img
           src="images/recommendations_countries/{{city_image}}"
-          alt="picture of {{slug}}"
+          alt="picture of {{city_name}}"
         />
-        <p>{{slug}}</p>
+        <p>{{city_name}}</p>
       </li>
     {{/each}}
   </ul>

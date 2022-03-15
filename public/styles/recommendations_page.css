@@ -1,16 +1,40 @@
 @import url(../styles/main.css);
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    text-align: center;
+    width: fit-content;
+    background-color: var(--secondary-brand-color);
+    color: var(--accent-brand-color);
+    padding: .5em 1em;
+    margin-bottom: 1rem;
+    border-radius: 1%;
+}
+
 section {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    width: var(--main-width);
 }
 
 section ul {
     display: grid;
-    gap: .5rem;
+    gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    margin-bottom: 5rem;
 }
 
 
@@ -27,6 +51,30 @@ section li img {
 section li p {
     text-align: center;
 }
- section * {
-     margin-block: 1rem;
- }
+
+
+button {
+    border: 0px solid transparent;
+    margin-top: 1rem;
+    text-shadow: 0px 0px 0px transparent;
+    width: fit-content;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  form button:first-of-type {
+    background-color: var(--primary-brand-color);
+    color: var(--accent-brand-color);
+    border: 0px solid transparent;
+    padding: 1em 5em;
+  }
+  
+  form button:last-of-type {
+    background-color: transparent;
+    color: var(--primary-brand-color);
+    border: 2px solid var(--primary-brand-color);
+    grid-column: 1 / 2;
+    padding: .5em 2.5em;
+  }

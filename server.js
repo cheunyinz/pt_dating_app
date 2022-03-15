@@ -89,12 +89,14 @@ app.post('/preference', async (req, res) => {
 app.get('/recommendations', async (req, res) => {
   const pageName = "recommendations"
   const stepName = "Our recommendations";
+  const stepNumber = "3";
   const stepTitle = "Here are your recommendations";
   const destinations = await db.collection('destinations').find(req.query).toArray();
 
   res.render('recommendations', {
     stepName,
     stepTitle,
+    stepNumber,
     pageName,
     destinations
   })
@@ -112,7 +114,7 @@ app.get('/add', (req, res) => {
   })
 })
 
-//add a recommendation + multer
+//add a recommendation + a picture using multer
 
 const Storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -164,6 +166,18 @@ async function connectDB() {
     console.log(error)
   }
 }
+
+//404
+app.use(function (req, res, next) {
+  const pageTitle = "Sorry, this page does not exist!";
+  const pageName = "404"
+
+  res.status(404).render('404', {
+    pageTitle,
+    pageName,
+    layout: 'add_layout.hbs'
+  })
+})
 
 
 

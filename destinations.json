@@ -7,7 +7,7 @@
         "budget": "reasonable",
         "name": "China",
         "region": "Asia",
-        "city_image": "hong-kong"
+        "city_image": "hong_kong.jpg"
         
     },
     {
@@ -18,7 +18,7 @@
         "budget": "reasonable",
         "name": "United States of America",
         "region": "Americas",
-        "city_image": "new-york"
+        "city_image": "new_york.jpg"
         
     },
     {
@@ -29,7 +29,7 @@
         "budget": "reasonable",
         "name": "Indonesia",
         "region": "Asia",
-        "city_image": "bali"
+        "city_image": "bali.jpg"
     },
     {
         "slug": "dubai",
@@ -39,17 +39,17 @@
         "budget": "no_budget",
         "name": "United Arab Emirates",
         "region": "Asia",
-        "city_image": "dubai"
+        "city_image": "dubai.jpg"
     },
     {
         "slug": "reykjavik",
         "city_name": "Reykjavik",
         "who_is_going": "group_of_friends",
-        "type_of_trip": "active",
+        "type_of_trip": "nature",
         "budget": "no_budget",
         "name": "Iceland",
         "region": "Europe",
-        "city_image": "reykjavik"
+        "city_image": "reykjavik.jpg"
     },
     {
         "slug": "rome",
@@ -59,7 +59,7 @@
         "budget": "low_budget",
         "name": "Italy",
         "region": "Europe",
-        "city_image": "rome"
+        "city_image": "rome.jpg"
     },
     {
         "slug": "vienna",
@@ -69,7 +69,7 @@
         "budget": "reasonable",
         "name": "Austria",
         "region": "Europe",
-        "city_image": "vienna"
+        "city_image": "vienna.jpg"
     }
     ,
     {
@@ -80,7 +80,7 @@
         "budget": "low_budget",
         "name": "Spain",
         "region": "Europe",
-        "city_image": "malaga"
+        "city_image": "malaga.jpg"
     },
     {
         "slug": "paris",
@@ -90,6 +90,6 @@
         "budget": "no_budget",
         "name": "France",
         "region": "Europe",
-        "city_image": "paris"
+        "city_image": "paris.jpg"
     }
 ]

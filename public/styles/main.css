@@ -38,6 +38,7 @@ ol {
   --primary-brand-color: #234de1;
   --secondary-brand-color: #e77c30;
   --accent-brand-color: #f7f9fd;
+  --none-active-border-color:#e2e2e2;
 
   --main-width: min(100% - 2rem, 75rem);
 }
@@ -45,6 +46,11 @@ ol {
 /*********/
 /*GENERAL*/
 /*********/
+
+body{
+  position: relative;
+  min-height: 100vh;
+}
 
 main {
  margin: 0 auto;
@@ -59,7 +65,7 @@ h1,h2,h3,h4 {
   font-weight: 700;
 }
 
-p, a, legend, label, button {
+p, a, legend, label, button, input {
   font-family: 'source-sans-pro', sans-serif;
   text-decoration: none;
 }
@@ -88,6 +94,23 @@ nav ul a {
   color: var(--accent-brand-color);
   font-size: 1.5rem;
   font-weight: 900;
+}
+
+
+footer {
+  position: absolute;
+  background-color: var(--primary-brand-color);
+  color: var(--accent-brand-color);
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  padding-block: 1rem .5rem;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+footer p {
+  text-align: center;
 }
 
 

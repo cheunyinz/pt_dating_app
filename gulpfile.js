@@ -12,7 +12,7 @@ gulp.task('css', () => (
     .pipe(cPrefix({
         cascade: false
     }))
-    .pipe(gulp.dest('public/dist'))
+    .pipe(gulp.dest('public/dist/styles'))
 ))
 
 gulp.task('watch', () => (
@@ -24,7 +24,7 @@ gulp.task('start', (done) => (
         script: 'server.js',
         ext: 'css',
         tasks: ['css'],
-        ignore: ['public/dist'],
+        ignore: ['public/dist/styles'],
         done: done
     })
 ))

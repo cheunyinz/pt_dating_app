@@ -1,0 +1,24 @@
+@import url(../styles/main.css);
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    height: 80vh;
+}
+
+main > p {
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+a {
+    display: block;
+    width: fit-content;
+    padding: 1rem 2rem;
+    background-color: var(--primary-brand-color);
+    color: var(--accent-brand-color);
+    border-radius: 2%;
+}
