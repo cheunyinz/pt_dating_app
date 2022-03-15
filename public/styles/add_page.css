@@ -80,6 +80,11 @@ fieldset [type=radio]:checked+figure {
     border: 2px solid var(--secondary-brand-color);
 }
 
+fieldset [type=file]{
+    margin-bottom: .75rem;
+}
+
+
 form div {
     display: flex;
     flex-direction: column;

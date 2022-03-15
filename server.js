@@ -130,7 +130,6 @@ const upload = multer({
 })
 
 app.post('/', upload.single('city_image'), async (req, res) => {
-  console.log(req.file);
 
   let destination = {
     slug: slug(req.body.city_name),
@@ -141,13 +140,16 @@ app.post('/', upload.single('city_image'), async (req, res) => {
     city_image: req.file.filename
   };
 
+  //add the data to the mongodb database
   await db.collection('destinations').insertOne(destination);
 
-  const confirmMessage = "You succesfully added a new recommendation"
+  const confirmMessage = "You succesfully added a new recommendation";
+  const popUpClass = "showPopup"
   const pageName = "index"
   res.render('index', {
     pageName,
     confirmMessage,
+    popUpClass,
     layout: 'landingPage_layout.hbs'
   })
 })

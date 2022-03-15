@@ -7,20 +7,23 @@ function goBack() {
     console.log("test")
 }
 
-backBtn.addEventListener('click', goBack)
+if(backBtn){
+    backBtn.addEventListener('click', goBack)
+}
 
 
-//close popup werkt niet doordat die geen backbtn kan vinden
+const closeBtn = document.querySelector('#close_Btn');
+const addedPopup = document.querySelector ('#added_Popup');
 
-// const closeBtn = document.querySelector('#close_Btn');
-// const addedPopup = document.querySelector ('#added_Popup');
+function closingPopup() {
+    addedPopup.classList.remove('showPopup')
+    console.log("het werkt")
+}
 
-// function closingPopup() {
-//     addedPopup.classList.add('hidePopup')
-//     console.log("het werkt")
-// }
+if(closeBtn && addedPopup){
+    closeBtn.addEventListener('click', closingPopup)
+}
 
-// closeBtn.addEventListener('click', closingPopup)
 
 //
 
