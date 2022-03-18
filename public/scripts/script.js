@@ -7,62 +7,42 @@ function goBack() {
     console.log("test")
 }
 
-if(backBtn){
+if (backBtn) {
     backBtn.addEventListener('click', goBack)
 }
 
 
 const closeBtn = document.querySelector('#close_Btn');
-const addedPopup = document.querySelector ('#added_Popup');
+const addedPopup = document.querySelector('#added_Popup');
 
 function closingPopup() {
     addedPopup.classList.remove('showPopup')
     console.log("het werkt")
 }
 
-if(closeBtn && addedPopup){
+if (closeBtn && addedPopup) {
     closeBtn.addEventListener('click', closingPopup)
 }
 
 
-//
+//get the user current location
 
-// const locBtn = document.querySelector('#getLocation')
+const locBtn = document.querySelector('#getLocation')
 
-// function getLocation() {
-//     if (navigator.geolocation)
-//         navigator.geolocation.getCurrentPosition(function (position) {
-//             console.log(position);
-//         });
-//     else
-//         console.log("geolocation not supported")
-// };
+function getLocation() {
+    if (navigator.geolocation)
+        navigator.geolocation.getCurrentPosition(function (position) {
+            console.log(position);
+        });
+    else
+        console.log("geolocation not supported")
+};
 
-// locBtn.addEventListener("click", getLocation)
+if (locBtn) {
+    locBtn.addEventListener("click", getLocation)
+}
 
 
-//REST COUNTRY API
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const selectCountry = document.querySelector('#landen');
-//     fetch(`https://restcountries.com/v2/all`)
-//         .then(res => {
-//             return res.json();
-//         }).then(data => {
-//             console.log(data);
-//             let output = "";
-//             data.forEach(country => {
-//                 output += `<option value="${country.name}">${country.name}</option>`;
-//             })
-//             selectCountry.innerHTML = output;
-//         }).then(err => {
-//             console.log(err);
-//         })
-//         .catch(err => {
-//             console.log(err);
-//         })
-
-// });
 
 
 //generate countries in the dropdown list
@@ -70,46 +50,91 @@ const selectCountry = document.querySelector('#userCountry');
 const restCountriesApi_url = "https://restcountries.com/v2/all";
 
 async function getCountries() {
-const response = await fetch(restCountriesApi_url);
-const data = await response.json();
-let output = "";
+    const response = await fetch(restCountriesApi_url);
+    const data = await response.json();
+    let output = "";
 
-data.forEach(country => {
-    output += `<option value="${country.region}">${country.name}</option>`;
-})
+    data.forEach(country => {
+        output += `<option value="${country.name}">${country.name}</option>`;
+    })
 
-selectCountry.innerHTML = output
+    selectCountry.innerHTML = output
+}
+if (selectCountry) {
+    document.addEventListener('DOMContentLoaded', getCountries)
 }
 
-document.addEventListener('DOMContentLoaded', getCountries)
 
 
 //get the value of the selected country in the drowdown list
 const submitRegisterBtn = document.querySelector('#submitPIBtn');
-const h2 = document.querySelector('h2');
-var userCountryValue = selectCountry.options[selectCountry.selectedIndex].text;
 
-function postSelectedCountry(){
-h2.innerText = selectCountry.options[selectCountry.selectedIndex].text;
+function passCountryValue() {
+
+    let selectedCountry = selectCountry.value;
+    localStorage.setItem("ddvalue", selectedCountry);
+    return true;
+}
+
+if (submitRegisterBtn && selectCountry) {
+    submitRegisterBtn.addEventListener('click', passCountryValue)
+}
+
+//have the value of the selected country in the value of the location preference options
+
+const countryPref = document.querySelector("#userCountry")
+const continentPref = document.querySelector("#userContinent");
+const countryPrefFlag = document.querySelector("#countryFlag");
+const continentPrefFlag = document.querySelector("#continentFlag")
+let userCountry = localStorage.getItem("ddvalue");
+
+
+async function getCountryValue() {
+    const response = await fetch(restCountriesApi_url);
+    const data = await response.json();
+    let userData = data.find(country => country.name === userCountry);
+    countryPref.value = userData.name;
+    countryPrefFlag.src = userData.flag;
+    countryPrefFlag.alt = "Flag of" +" "+ userData.name;
+    continentPref.value = userData.region;
+    continentPrefFlag.src = "images/preference_location_icons/"+userData.region+".png";
+    continentPrefFlag.alt = "Flag of" +" "+ userData.region;
+}
+
+if (countryPref && continentPref && userCountry && restCountriesApi_url) {
+    document.addEventListener('DOMContentLoaded', getCountryValue)
 }
 
 
 
-selectCountry.addEventListener('change', postSelectedCountry)
+// function getCountryValue(){
+//     locationPref.value = userCountry
+//     console.log("test")
+// }
+
+// if(locationPref){
+//     document.addEventListener('DOMContentLoaded', getCountryValue)
+// }
 
 
-    // const countryData = {
-    //     countryName,
-    //     regionName
-    // }
-    
-    // const options = {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify(countryData)
-    // };
-    // const res = await fetch('/preference', options);
-    // const json = await res.json();
-    // console.log(json);
+
+
+// const countryData = {
+//     countryName,
+//     regionName
+// }
+
+// const options = {
+//     method: 'POST',
+//     headers: {
+//         'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify(countryData)
+// };
+// const res = await fetch('/preference', options);
+// const json = await res.json();
+// console.log(json);
+
+
+
+

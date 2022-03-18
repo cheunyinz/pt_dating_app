@@ -70,11 +70,11 @@ app.post('/preference', async (req, res) => {
   const stepNumber = "2";
   const stepTitle = "Select your preferences";
 
-  //country in mongodb inserten
-  // let userCountry = {
-  //   name: req.body.country
-  // };
-  // await db.collection('user_country').insertOne(userCountry)
+  // country in mongodb inserten
+  let userCountry = {
+    name: req.body.country
+  };
+  await db.collection('user_country').insertOne(userCountry)
 
 
   res.render('preference', {
@@ -91,7 +91,18 @@ app.get('/recommendations', async (req, res) => {
   const stepName = "Our recommendations";
   const stepNumber = "3";
   const stepTitle = "Here are your recommendations";
-  const destinations = await db.collection('destinations').find(req.query).toArray();
+  const locPreference = req.query.countrylocation;
+  const wigPreference = req.query.who_is_going;
+  const totPreference = req.query.type_of_trip;
+  const budPreference = req.query.budget;
+
+  let userQuery1 = {$or: [{"name":locPreference},{"region":locPreference}]};
+  let userQuery2 = {"who_is_going": wigPreference, "type_of_trip":totPreference, "budget":budPreference};
+  let userQuery = {$and: [userQuery1, userQuery2]};
+  const destinations = await db.collection('destinations').find(userQuery).toArray();
+
+  console.log(userQuery);
+
 
   res.render('recommendations', {
     stepName,

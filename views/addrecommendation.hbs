@@ -1,7 +1,7 @@
 <h2>Add a recommendation</h2>
 
-<form action="/" method="post" enctype="multipart/form-data" >
-  
+<form action="/" method="post" enctype="multipart/form-data">
+
   <fieldset>
     <legend>City name</legend>
     <label>
@@ -10,122 +10,163 @@
   </fieldset>
 
   <fieldset>
+    <legend>City location</legend>
+    <label for="country">Current location</label>
+    <select name="country" id="userCountry">
+    </select>
+  </fieldset>
+
+  <fieldset>
     <legend>Who is going?</legend>
     <label>
-      <input type="radio" name="who_is_going" id="group_of_friends" value="group_of_friends" required />
+      <input
+        type="radio"
+        name="who_is_going"
+        id="group_of_friends"
+        value="group_of_friends"
+        required
+      />
       <figure>
-        <div><img src="images/who_is_going_icons/group_of_friends.jpeg" alt="pic"></div>
+        <div><img
+            src="images/who_is_going_icons/group_of_friends.jpeg"
+            alt="pic"
+          /></div>
         <figcaption>A group of friends</figcaption>
       </figure>
     </label>
 
     <label>
-    <input type="radio" name="who_is_going" id="couple" value="couple" />
-    <figure>
-      <div><img src="images/who_is_going_icons/couple_traveling.jpg" alt="couple traveling"></div>
-      <figcaption>A couple</figcaption>
-    </figure>
+      <input type="radio" name="who_is_going" id="couple" value="couple" />
+      <figure>
+        <div><img
+            src="images/who_is_going_icons/couple_traveling.jpg"
+            alt="couple traveling"
+          /></div>
+        <figcaption>A couple</figcaption>
+      </figure>
     </label>
 
     <label>
-    <input type="radio" name="who_is_going" id="myself" value="myself" />
-    <figure>
-      <div><img src="images/who_is_going_icons/solo_traveler.jpeg" alt="solo traveler"></div>
-      <figcaption>A Solo trip</figcaption>
-    </figure>
+      <input type="radio" name="who_is_going" id="myself" value="myself" />
+      <figure>
+        <div><img
+            src="images/who_is_going_icons/solo_traveler.jpeg"
+            alt="solo traveler"
+          /></div>
+        <figcaption>A Solo trip</figcaption>
+      </figure>
     </label>
 
     <label>
-    <input type="radio" name="who_is_going" id="family" value="family">
-    <figure>
-      <div><img src="images/who_is_going_icons/family_traveling.jpg" alt="family traveling"></div>
-      <figcaption>A family</figcaption>
-    </figure>
+      <input type="radio" name="who_is_going" id="family" value="family" />
+      <figure>
+        <div><img
+            src="images/who_is_going_icons/family_traveling.jpg"
+            alt="family traveling"
+          /></div>
+        <figcaption>A family</figcaption>
+      </figure>
     </label>
   </fieldset>
 
   <fieldset>
     <legend>Type of trip</legend>
     <label>
-    <input type="radio" name="type_of_trip" id="city" value="city" required />
-    <figure>
-      <div><img src="images/type_of_trip_icons/city_trip.jpg" alt="city trip"></div>
-      <figcaption>City</figcaption>
-    </figure>
+      <input type="radio" name="type_of_trip" id="city" value="city" required />
+      <figure>
+        <div><img
+            src="images/type_of_trip_icons/city_trip.jpg"
+            alt="city trip"
+          /></div>
+        <figcaption>City</figcaption>
+      </figure>
     </label>
 
     <label>
-    <input type="radio" name="type_of_trip" id="beach" value="beach" />
-    <figure>
-      <div><img src="images/type_of_trip_icons/beach_trip.jpg" alt="beach trip"></div>
-      <figcaption>Beach</figcaption>
-    </figure>
+      <input type="radio" name="type_of_trip" id="beach" value="beach" />
+      <figure>
+        <div><img
+            src="images/type_of_trip_icons/beach_trip.jpg"
+            alt="beach trip"
+          /></div>
+        <figcaption>Beach</figcaption>
+      </figure>
     </label>
 
     <label>
-    <input type="radio" name="type_of_trip" id="nature" value="nature" />
-    <figure>
-      <div><img src="images/type_of_trip_icons/nature_trip.jpeg" alt="nature trip"></div>
-      <figcaption>Nature</figcaption>
-    </figure>
+      <input type="radio" name="type_of_trip" id="nature" value="nature" />
+      <figure>
+        <div><img
+            src="images/type_of_trip_icons/nature_trip.jpeg"
+            alt="nature trip"
+          /></div>
+        <figcaption>Nature</figcaption>
+      </figure>
     </label>
 
     <label>
-    <input type="radio" name="type_of_trip" id="culture" value="culture">
-    <figure>
-      <div><img src="images/type_of_trip_icons/culture_trip.jpg" alt="culture trip"></div>
-      <figcaption>Culture</figcaption>
-    </figure>
+      <input type="radio" name="type_of_trip" id="culture" value="culture" />
+      <figure>
+        <div><img
+            src="images/type_of_trip_icons/culture_trip.jpg"
+            alt="culture trip"
+          /></div>
+        <figcaption>Culture</figcaption>
+      </figure>
     </label>
   </fieldset>
 
-<fieldset>
+  <fieldset>
     <legend>Budget</legend>
     <label>
-    <input type="radio" name="budget" id="low_budget" value="low_budget" required />
-   <figure>
-     <div><img src="images/budget_icons/low_budget.png" alt="low budget icon"></div>
-      <figcaption>Low_budget</figcaption>
-   </figure>
+      <input
+        type="radio"
+        name="budget"
+        id="low_budget"
+        value="low_budget"
+        required
+      />
+      <figure>
+        <div><img
+            src="images/budget_icons/low_budget.png"
+            alt="low budget icon"
+          /></div>
+        <figcaption>Low_budget</figcaption>
+      </figure>
     </label>
 
     <label>
-    <input type="radio" name="budget" id="reasonable" value="reasonable" />
-    <figure>
-      <div><img src="images/budget_icons/reasonable_budget.png" alt="reasonable icon"></div>
-      <figcaption>Reasonable</figcaption>
-    </figure>
+      <input type="radio" name="budget" id="reasonable" value="reasonable" />
+      <figure>
+        <div><img
+            src="images/budget_icons/reasonable_budget.png"
+            alt="reasonable icon"
+          /></div>
+        <figcaption>Reasonable</figcaption>
+      </figure>
     </label>
 
     <label>
-    <input type="radio" name="budget" id="no_budget" value="no_budget" />
-    <figure>
-      <div><img src="images/budget_icons/no_budget.png" alt="no budget icon"></div>
-       <figcaption>No budget</figcaption>
-    </figure>
+      <input type="radio" name="budget" id="no_budget" value="no_budget" />
+      <figure>
+        <div><img
+            src="images/budget_icons/no_budget.png"
+            alt="no budget icon"
+          /></div>
+        <figcaption>No budget</figcaption>
+      </figure>
     </label>
   </fieldset>
 
-    <fieldset>
+  <fieldset>
     <legend>Upload place image</legend>
     <label for="city_image">
-      <input type="file" name="city_image" id="city_image" required/>
+      <input type="file" name="city_image" id="city_image" required />
     </label>
   </fieldset>
 
-<div>
+  <div>
     <button type="submit"> Submit recommendation</button>
     <button id="back_Btn">Go Back</button>
-</div>
+  </div>
 </form>
-
-
-
-
-
-
-
-
-
-
-
