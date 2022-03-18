@@ -7,7 +7,32 @@
         "budget": "reasonable",
         "name": "Hong Kong",
         "region": "Asia",
-        "city_image": "hong_kong.jpg"
+        "city_image": "hong_kong.jpg",
+        "planet": "earth"
+        
+    },
+    {
+        "slug": "tokyo",
+        "city_name": "Tokyo",
+        "who_is_going": "couple",
+        "type_of_trip": "city",
+        "budget": "reasonable",
+        "name": "Japan",
+        "region": "Asia",
+        "city_image": "tokyo.jpg",
+        "planet": "earth"
+        
+    },
+    {
+        "slug": "seoul",
+        "city_name": "Seoul",
+        "who_is_going": "couple",
+        "type_of_trip": "city",
+        "budget": "reasonable",
+        "name": "Korea (Republic of)",
+        "region": "Asia",
+        "city_image": "seoul.jpg",
+        "planet": "earth"
         
     },
     {
@@ -18,7 +43,8 @@
         "budget": "reasonable",
         "name": "United States of America",
         "region": "Americas",
-        "city_image": "new_york.jpg"
+        "city_image": "new_york.jpg",
+        "planet": "earth"
         
     },
     {
@@ -29,7 +55,8 @@
         "budget": "reasonable",
         "name": "Indonesia",
         "region": "Asia",
-        "city_image": "bali.jpg"
+        "city_image": "bali.jpg",
+        "planet": "earth"
     },
     {
         "slug": "dubai",
@@ -39,7 +66,8 @@
         "budget": "no_budget",
         "name": "United Arab Emirates",
         "region": "Asia",
-        "city_image": "dubai.jpg"
+        "city_image": "dubai.jpg",
+        "planet": "earth"
     },
     {
         "slug": "reykjavik",
@@ -49,7 +77,8 @@
         "budget": "no_budget",
         "name": "Iceland",
         "region": "Europe",
-        "city_image": "reykjavik.jpg"
+        "city_image": "reykjavik.jpg",
+        "planet": "earth"
     },
     {
         "slug": "rome",
@@ -59,7 +88,8 @@
         "budget": "low_budget",
         "name": "Italy",
         "region": "Europe",
-        "city_image": "rome.jpg"
+        "city_image": "rome.jpg",
+        "planet": "earth"
     },
     {
         "slug": "vienna",
@@ -69,7 +99,8 @@
         "budget": "reasonable",
         "name": "Austria",
         "region": "Europe",
-        "city_image": "vienna.jpg"
+        "city_image": "vienna.jpg",
+        "planet": "earth"
     }
     ,
     {
@@ -80,7 +111,8 @@
         "budget": "low_budget",
         "name": "Spain",
         "region": "Europe",
-        "city_image": "malaga.jpg"
+        "city_image": "malaga.jpg",
+        "planet": "earth"
     },
     {
         "slug": "paris",
@@ -90,6 +122,7 @@
         "budget": "no_budget",
         "name": "France",
         "region": "Europe",
-        "city_image": "paris.jpg"
+        "city_image": "paris.jpg",
+        "planet": "earth"
     }
 ]
