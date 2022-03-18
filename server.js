@@ -97,13 +97,27 @@ app.get('/recommendations', async (req, res) => {
   const budPreference = req.query.budget;
 
   //find locations if the name is locPreference or the region is locPreference or the plabet is earth
-  let userQuery1 = {$or: [{"name":locPreference},{"region":locPreference},{"planet":locPreference}]};
-  let userQuery2 = {"who_is_going": wigPreference, "type_of_trip":totPreference, "budget":budPreference};
+  let userQuery1 = {
+    $or: [{
+      "name": locPreference
+    }, {
+      "region": locPreference
+    }, {
+      "planet": locPreference
+    }]
+  };
+  let userQuery2 = {
+    "who_is_going": wigPreference,
+    "type_of_trip": totPreference,
+    "budget": budPreference
+  };
   //only show if userQuery1 is true and userQuery 2
-  let userQuery = {$and: [userQuery1, userQuery2]};
+  let userQuery = {
+    $and: [userQuery1, userQuery2]
+  };
   const destinations = await db.collection('destinations').find(userQuery).toArray();
 
- console.log(userQuery)
+  console.log(userQuery)
 
 
   res.render('recommendations', {
@@ -152,7 +166,8 @@ app.post('/', upload.single('city_image'), async (req, res) => {
     budget: req.body.budget,
     name: req.body.name,
     region: req.body.region,
-    city_image: req.file.filename
+    city_image: req.file.filename,
+    planet:"earth"
   };
 
   //add the data to the mongodb database

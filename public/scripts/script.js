@@ -96,15 +96,12 @@ async function getCountryValue() {
     let userData = data.find(country => country.name === userCountry);
     countryPref.value = userData.name;
     countryPrefFlag.src = userData.flag;
-    countryPrefFlag.alt = "Flag of" +" "+ userData.name;
+    countryPrefFlag.alt = "Flag of" + " " + userData.name;
     continentPref.value = userData.region;
-    continentPrefFlag.src = "images/preference_location_icons/"+userData.region+".png";
-    continentPrefFlag.alt = "Flag of" +" "+ userData.region;
+    continentPrefFlag.src = "images/preference_location_icons/" + userData.region + ".png";
+    continentPrefFlag.alt = "Flag of" + " " + userData.region;
 }
 
 if (countryPref && continentPref && userCountry && restCountriesApi_url) {
     document.addEventListener('DOMContentLoaded', getCountryValue)
 }
-
-
-
