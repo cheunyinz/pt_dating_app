@@ -48,6 +48,30 @@
         
     },
     {
+        "slug": "los_angeles",
+        "city_name": "Los Angeles",
+        "who_is_going": "couple",
+        "type_of_trip": "city",
+        "budget": "reasonable",
+        "name": "United States of America",
+        "region": "Americas",
+        "city_image": "los_angeles.jpg",
+        "planet": "earth"
+        
+    },
+    {
+        "slug": "australia",
+        "city_name": "Sydney",
+        "who_is_going": "couple",
+        "type_of_trip": "city",
+        "budget": "reasonable",
+        "name": "Australia",
+        "region": "Oceania",
+        "city_image": "sydney.jpg",
+        "planet": "earth"
+        
+    },
+    {
         "slug": "bali",
         "city_name": "Bali",
         "who_is_going": "couple",

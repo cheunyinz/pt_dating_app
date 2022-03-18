@@ -150,6 +150,8 @@ app.post('/', upload.single('city_image'), async (req, res) => {
     who_is_going: req.body.who_is_going,
     type_of_trip: req.body.type_of_trip,
     budget: req.body.budget,
+    name: req.body.name,
+    region: req.body.region,
     city_image: req.file.filename
   };
 

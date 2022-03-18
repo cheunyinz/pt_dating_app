@@ -47,6 +47,7 @@ if (locBtn) {
 
 //generate countries in the dropdown list
 const selectCountry = document.querySelector('#userCountry');
+const selectRegion = document.querySelector('#userRegion');
 const restCountriesApi_url = "https://restcountries.com/v2/all";
 
 async function getCountries() {
@@ -58,7 +59,7 @@ async function getCountries() {
         output += `<option value="${country.name}">${country.name}</option>`;
     })
 
-    selectCountry.innerHTML = output
+    selectCountry.innerHTML = output;
 }
 if (selectCountry) {
     document.addEventListener('DOMContentLoaded', getCountries)
@@ -104,37 +105,6 @@ async function getCountryValue() {
 if (countryPref && continentPref && userCountry && restCountriesApi_url) {
     document.addEventListener('DOMContentLoaded', getCountryValue)
 }
-
-
-
-// function getCountryValue(){
-//     locationPref.value = userCountry
-//     console.log("test")
-// }
-
-// if(locationPref){
-//     document.addEventListener('DOMContentLoaded', getCountryValue)
-// }
-
-
-
-
-// const countryData = {
-//     countryName,
-//     regionName
-// }
-
-// const options = {
-//     method: 'POST',
-//     headers: {
-//         'Content-Type': 'application/json'
-//     },
-//     body: JSON.stringify(countryData)
-// };
-// const res = await fetch('/preference', options);
-// const json = await res.json();
-// console.log(json);
-
 
 
 
