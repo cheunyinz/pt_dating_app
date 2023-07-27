@@ -167,7 +167,7 @@ app.post('/', upload.single('city_image'), async (req, res) => {
     name: req.body.name,
     region: req.body.region,
     city_image: req.file.filename,
-    planet:"earth"
+    planet: "earth"
   };
 
   //add the data to the mongodb database
@@ -193,11 +193,12 @@ async function connectDB() {
     useNewUrlParser: true,
     useUnifiedTopology: true
   });
+  console.log(mdbURI, "test mdbURI env")
   try {
     await client.connect();
     db = await client.db(process.env.mdbName);
   } catch (error) {
-    console.log(error)
+    console.log('Failed to connect to MongoDB:', error)
   }
 }
 
