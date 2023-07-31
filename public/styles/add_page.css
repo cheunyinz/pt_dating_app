@@ -1,118 +1,115 @@
 @import url(../styles/main.css);
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
-    width: var(--main-width);
+  width: var(--main-width);
 }
 
 form {
-    margin: 0 auto;
-
+  margin: 0 auto;
 }
 
 legend {
-    font-weight: 700;
-    margin-bottom: .5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
-fieldset{
-    border: none;
+fieldset {
+  border: none;
 }
 
-fieldset:first-child, fieldset:last-of-type {
-    display: flex;
-    flex-direction: row;
+fieldset:first-child,
+fieldset:last-of-type {
+  display: flex;
+  flex-direction: row;
 }
 
 fieldset:not(:first-of-type, :last-of-type) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1rem;
-    margin-block: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-block: 1rem;
 }
 
 fieldset:not(:first-of-type, :last-of-type) label {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
 }
 
-fieldset figure{
-    padding: 1rem;
-    border-radius: 2%;
-    border: 2px solid var(--none-active-border-color);
+fieldset figure {
+  padding: 1rem;
+  border-radius: 2%;
+  border: 2px solid var(--none-active-border-color);
 }
 
 fieldset figure div {
-    max-height: 10rem;
-    overflow: hidden;
+  max-height: 10rem;
+  overflow: hidden;
 }
 
-
 fieldset figure img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 
 fieldset label figcaption {
-    text-align: center;
-    margin-top: .5rem;
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
-fieldset:not(:first-of-type,:last-of-type) label input{
-    position: absolute;
-    opacity: 0;
+fieldset:not(:first-of-type, :last-of-type) label input {
+  position: absolute;
+  opacity: 0;
 }
 
-fieldset [type=radio]+figure {
-    cursor: pointer;
-    overflow: hidden;
-
+fieldset [type="radio"] + figure {
+  cursor: pointer;
+  overflow: hidden;
 }
 
-fieldset [type=radio]:checked+figure {
-    border: 2px solid var(--secondary-brand-color);
+fieldset [type="radio"]:checked + figure {
+  border: 2px solid var(--secondary-brand-color);
 }
 
-fieldset [type=file]{
-    margin-bottom: .75rem;
+fieldset [type="file"] {
+  margin-bottom: 0.75rem;
 }
-
 
 form div {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 form button {
-    border: 0px solid transparent;
-    margin-top: 1rem;
-    text-shadow: 0px 0px 0px transparent;
-    width: fit-content;
-  }
-  
- form button:hover {
-    cursor: pointer;
-  }
-  
-  form button:first-of-type {
-    background-color: var(--primary-brand-color);
-    color: var(--accent-brand-color);
-    border: 0px solid transparent;
-    padding: 1em 5em;
-  }
-  
- form button:last-of-type {
-    background-color: transparent;
-    color: var(--primary-brand-color);
-    border: 2px solid var(--primary-brand-color);
-    grid-column: 1 / 2;
-    padding: .5em 2.5em;
-    margin-bottom: 5rem;
-  }
+  border: 0px solid transparent;
+  margin-top: 1rem;
+  text-shadow: 0px 0px 0px transparent;
+  width: fit-content;
+}
+
+form button:hover {
+  cursor: pointer;
+}
+
+form button:first-of-type {
+  background-color: var(--primary-brand-color);
+  color: var(--accent-brand-color);
+  border: 0px solid transparent;
+  padding: 1em 5em;
+}
+
+form button:last-of-type {
+  background-color: transparent;
+  color: var(--primary-brand-color);
+  border: 2px solid var(--primary-brand-color);
+  grid-column: 1 / 2;
+  padding: 0.5em 2.5em;
+  margin-bottom: 5rem;
+}
